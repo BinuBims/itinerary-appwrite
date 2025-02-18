@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <script type="module" crossorigin src="/assets/main-U3dPuKZt.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-xrGKhuWX.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-y4L-N2PQ.css">
+  </head>
+  <body>
+    <section id="cardList" class="card-list">
+      <!-- Dynamically generated <article class="card"> elements will be inserted here -->
+      <!-- <article class="card">
+        <header class="card-header">
+          <p></p>
+          <h2></h2>
+        </header> -->
+        <!-- Placeholder for dynamically generated day sections -->
+        <!-- <div class="day-sections"></div>
+        <div class="tags">
+          <span></span>
+        </section>
+      </article> -->
+    </section>
+    <section class="container">
+      <h1>Travel Itinerary</h1>
+      <form id="travelForm">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+  
+        <label for="budget">Budget:</label>
+        <input type="number" id="budget" name="budget" required>
+  
+        <label for="days">Number of Days:</label>
+        <input type="number" id="days" name="days" min="1" required onchange="generateDaySections()">
+  
+        <div id="daySections"></div>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    
+    <script>
+      function generateDaySections() {
+      const days = parseInt(document.getElementById('days').value);
+      const daySections = document.getElementById('daySections');
+      daySections.innerHTML = ''; // Clear previous sections
+  
+      for (let i = 1; i <= days; i++) {
+        daySections.innerHTML += `
+          <div class="day-section">
+            <h3>Day ${i}</h3>
+            <label for="activities-day${i}">Activities:</label>
+            <textarea id="activities-day${i}" name="activities-day${i} rows="4" placeholder="Enter activities for Day ${i}. Use only comma without space to seperate each activity"></textarea>
+  
+            <label for="hotel-day${i}">Hotel:</label>
+            <input type="text" id="hotel-day${i}" name="hotel-day${i}" placeholder="Enter hotel for Day ${i}">
+          </div>
+        `;
+      }
+    }
+      </script>
+  </body>
+</html>
