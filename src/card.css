@@ -34,7 +34,7 @@ a {
 
 
 .card {
-    height: 350px;
+    height: 500px;
     width: 400px;
     min-width: 250px;
     padding: 1.5rem;
@@ -121,7 +121,7 @@ a {
     box-sizing: border-box;
 }
 
-.author-name-prefix {
+h4 {
     font-style: normal;
     font-weight: 700;
     color: #7a7a8c;
@@ -140,6 +140,11 @@ a {
     pointer-events: none;
 }
 
+h4, .tags{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
 .tags {
     margin: 1rem 0 2rem;
     padding: .5rem 0 1rem;
@@ -147,7 +152,7 @@ a {
     margin-bottom: 0;
 }
 
-.tags a {
+.tags span,.tags button {
     font-style: normal;
     font-weight: 700;
     font-size: .5rem;
@@ -160,7 +165,8 @@ a {
     position: relative;
 }
 
-.tags a:hover {
+.tags button:hover {
+    color:#7a7a8c;
     background: linear-gradient(90deg,#ff8a00,#e52e71);
     text-shadow: none;
     -webkit-text-fill-color: transparent;
@@ -169,3 +175,48 @@ a {
     background-clip: text;
     border-color: white;
 }
+
+.oneContainer > span{
+    color: #407088;
+
+}
+
+h4 {
+    margin: 10px 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* .activityContainer {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-column-start: 1;
+} */
+
+.activityContainer{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+    background-color: #17141d;
+    color: #d60955;
+    font-family: Arial, sans-serif;
+}
+
+.oneContainer {
+flex: 1 1;
+border-radius: 0.5rem;
+background-color: rgb(160, 156, 156);
+margin: 0.25rem;
+padding: 0.25rem 0.5rem;
+line-height: 1.5rem;
+}
+    
+
+
+
+

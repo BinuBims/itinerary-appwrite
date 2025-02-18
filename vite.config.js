@@ -11,4 +11,10 @@ export default defineConfig({
       },
     },
   },
+  define:{
+    'process.env.PROJECT_ID': JSON.stringify(process.env.PROJECT_ID),
+    'process.env.DATABASE_ID': JSON.stringify(process.env.DATABASE_ID)
+
+
+  }
 });
