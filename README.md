@@ -1,23 +1,37 @@
-# Itinerary Web App with Apprwrite Backend
-Created an itinearry app to share people's itenaries when they travel to different contries and different citites. I had a really hard time to craeting an itenaries when i planned a trip to Thailand. I know that a lot of people travel there too and it is too complicated
-figure things out. so i build a webapp where people can share their iternaries for each day and the hotels they stayed add. the data was stored in appwrite.
+# Itinerary Web App with Appwrite Backend  
 
-**Link to project:** https://travel-itinerary-web.netlify.app/
+I built an itinerary-sharing web app to help travelers plan trips more easily. When I was planning a trip to Thailand, I found it difficult to organize my itinerary, and I realized others might face the same challenge. This inspired me to create a platform where users can share their day-to-day itineraries, including hotels they stayed at and activities they did. All data is stored using an **Appwrite backend**.  
 
-![alt tag](images/landingpage.JPG)
+**Project Link:** [Travel Itinerary Web App](https://travel-itinerary-web.netlify.app/)  
 
-## How It's Made:
+![Landing Page](images/landingpage.JPG)  
 
-**Tech used:** HTML, CSS, JavaScript, Appwrite and Vite
+---
 
-once you fork the repo. run npm install and then run npm run dev. also you want to have your appwrite backend setup to add and itenaries
+## How It’s Made  
 
-## Optimizations
+**Tech Stack:** HTML, CSS, JavaScript, Vite, Appwrite  
 
-Right now anyone can enter any information to the database. I want to add a function where people can login so they can have a dashboard to enter their itenaries. also added backend option where people can uploade images. also an option that user can rate other people;s
-itinearries and like and share them with other users.
+To run the project locally:  
+1. Fork the repository  
+2. Run `npm install`  
+3. Start the dev server with `npm run dev`  
+4. Set up your Appwrite backend to store and manage itineraries  
 
-## Lessons Learned:
+---
 
-A lot of javascript to learn. as the page dynamically changes based on the number of days each itenaries are.it was easy to setup the backend with appwrite. had to learn async and wait. eventloop. prevent default reoload. also it was really annoying to do changes and load 
-components with pure javascript. i should have look into React or other frontend framework.
+## Optimizations  
+
+Currently, anyone can submit itineraries to the database. Future improvements include:  
+- Adding authentication so users can log in and manage their own dashboard  
+- Allowing image uploads for each itinerary  
+- Enabling users to rate, like, and share itineraries  
+
+---
+
+## Lessons Learned  
+
+- Learned a lot about **JavaScript**, especially handling dynamic changes based on the number of itinerary days  
+- Gained experience with **async/await**, event loops, and preventing default reloads  
+- Found it tedious to manage components with pure JavaScript — next time I’d use **React** or another frontend framework for better scalability  
+
